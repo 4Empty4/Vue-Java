@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Vue App</title>
+    <!-- Підключення Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
+
+<div id="app"></div>
+
+<!-- Ваш компонент Vue -->
+<script src="App.vue"></script>
+
+<!-- Ініціалізація Vue -->
+<script>
+    new Vue({
+        el: '#app',
+        render: h => h(App)
+    });
+</script>
 
 </body>
 </html>
