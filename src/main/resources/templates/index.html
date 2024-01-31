@@ -12,13 +12,13 @@
 <div id="app"></div>
 
 <!-- Ваш компонент Vue -->
-<script src="App.vue"></script>
+<script src="../static/App.vue" type="text/x-template"></script>
 
 <!-- Ініціалізація Vue -->
 <script>
     new Vue({
         el: '#app',
-        render: h => h(App)
+        render: h => h({ template: '#app-template' }),
     });
 </script>
 
